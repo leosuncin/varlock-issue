@@ -36,4 +36,5 @@ jobs:
         run: npm run test
         env:
           HOST: localhost
+          NODE_OPTIONS: --test-reporter node-test-github-reporter
           PORT: 3000
