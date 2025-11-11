@@ -1,11 +1,20 @@
 {
   "name": "varlock-demo",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "",
+  "license": "GPL-3.0-only",
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env --experimental-strip-types server.ts",
+    "test": "node --env-file=.env --test --experimental-strip-types test.spec.ts",
+    "test:ci": "start-test 3000"
+  },
+  "devDependencies": {
+    "@tsconfig/node-lts": "^22.0.2",
+    "@tsconfig/node-ts": "^23.6.1",
+    "@types/node": "^24.7.2",
+    "start-server-and-test": "^2.1.2",
+    "typescript": "^5.9.3"
+  }
 }
