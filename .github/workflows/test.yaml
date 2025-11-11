@@ -36,7 +36,7 @@ jobs:
       - name: Run tests
         run: npx varlock load
         env:
-          HOST: localhost
+          HOST: 127.0.0.1
           NODE_ENV: test
           NODE_OPTIONS: --test-reporter node-test-github-reporter
           PORT: 3000
