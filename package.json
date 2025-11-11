@@ -6,8 +6,8 @@
   "author": "",
   "type": "module",
   "scripts": {
-    "start": "node --env-file=.env --experimental-strip-types server.ts",
-    "test": "node --env-file=.env --test --experimental-strip-types test.spec.ts",
+    "start": "node --experimental-strip-types server.ts",
+    "test": "node --test --experimental-strip-types test.spec.ts",
     "test:ci": "start-test 3000"
   },
   "devDependencies": {
