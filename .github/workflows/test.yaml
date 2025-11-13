@@ -57,6 +57,7 @@ jobs:
         run: npx varlock load
       - name: Run script
         run: node print-env.js
+        continue-on-error: true
       - name: Run tests
         run: npm test
         env:
