@@ -55,6 +55,8 @@ jobs:
         run: npm ci
       - name: Print variables
         run: npx varlock load
+      - name: Run script
+        run: node print-env.js
       - name: Run tests
         run: npm test
         env:
