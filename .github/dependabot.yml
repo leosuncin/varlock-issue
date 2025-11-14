@@ -11,6 +11,6 @@ updates:
       interval: "daily"
     ignore:
       - dependency-name: "*" # Ignore all dependencies by default
-        # Allow updates for a specific dependency
-        allow:
-          - dependency-name: "varlock"
+    # Allow updates for a specific dependency
+    allow:
+      - dependency-name: "varlock"
