@@ -19,6 +19,6 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "varlock": "^0.1.0"
+    "varlock": "https://pkg.pr.new/dmno-dev/varlock@204"
   }
 }
